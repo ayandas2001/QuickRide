@@ -4,6 +4,8 @@ import com.springboot.project.uber.QuickRide.dto.DriverDto;
 import com.springboot.project.uber.QuickRide.dto.RideDto;
 import com.springboot.project.uber.QuickRide.dto.RideRequestDto;
 import com.springboot.project.uber.QuickRide.dto.RiderDto;
+import com.springboot.project.uber.QuickRide.entities.Rider;
+import com.springboot.project.uber.QuickRide.entities.User;
 
 import java.util.List;
 
@@ -13,4 +15,6 @@ public interface RiderService {
     DriverDto rateDriver(Long rideId, Integer rating);
     RiderDto getMyProfile();
     List<RideDto> getAllMyRide();
+
+    Rider createRider(User user);
 }

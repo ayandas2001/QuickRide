@@ -1,8 +1,14 @@
 package com.springboot.project.uber.QuickRide.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 @Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Rider {
 
     @Id
